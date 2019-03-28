@@ -14,7 +14,6 @@ export class MainContainerComponent implements OnInit {
   }
 
   clickerMe(){
-    console.log('naviagating to actions');
-    this.router.navigate([{outlets: {actionsbar:'actions'}}], { relativeTo: this.activatedRoute.parent});
+    
   }
 }
