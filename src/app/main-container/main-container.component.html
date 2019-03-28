@@ -1,0 +1,39 @@
+<p>
+  main-container works!
+</p>
+
+<div class="row">
+    <ul>
+        <li (click)="clickerMe()">Show the main something</li>
+      </ul>
+      <div class="row">
+        <div class="col-md-10">
+            Main stuff
+        </div>
+        <div class="col-md-2">
+            Some buttons please
+        </div>
+      </div>
+
+<div class="card-body">
+    <div class="wizard">
+      <a [routerLink]="['cloner']"
+      routerLinkActive="active">
+        Cloner
+      </a>
+      <a [routerLink]="['fiddler']"
+      routerLinkActive="active">
+        Fiddler      
+      </a>
+      <a [routerLink]="['scratcher']"
+      routerLinkActive="active">
+        Scratcher
+      </a>
+    </div>
+  </div>
+
+
+<div class="container">
+    <router-outlet></router-outlet>
+
+</div>
