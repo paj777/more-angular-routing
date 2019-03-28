@@ -32,7 +32,7 @@ export class CloneContainerComponent implements OnInit, AfterViewInit {
 
   clickerMe(){
     //alert('clicker me');
-    console.log('naviagating to actions');
+    console.log('naviagating to actions' + this.activatedRoute);
     this.router.navigate([{outlets: 
       {actionsbar:['actions']
     }

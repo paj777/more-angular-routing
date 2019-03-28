@@ -4,16 +4,11 @@ import { CloneContainerComponent } from './clone-container/clone-container.compo
 import { ActionsComponent } from './actions/actions.component';
 
 const rootAppRoutes: Routes = [    
-    { path: '', redirectTo: 'cloner', pathMatch: 'full' },    
+    { path: '', redirectTo: 'cloner', pathMatch: 'full' },
     {
         path:'cloner',
         component: CloneContainerComponent,
-        children:[{
-            path:'',
-            component: CloneContainerComponent, children: [
-                {path: 'actions', component: ActionsComponent, outlet:'actions'}
-            ]
-        }
+        children:[{path: 'actions', component: ActionsComponent, outlet:'actionsbar'}
     ]                    
     },
         
